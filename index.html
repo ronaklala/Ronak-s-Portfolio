@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ronak's Portfolio</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/circle.css">
+	<link rel="stylesheet" href= "css/index.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Bebas+Neue&display=swap" rel="stylesheet">
+<meta name="description" content="Adding elasticity with SVG shape animations" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width"/>
+<link rel="icon" href="img/loho.png" type="image/png" sizes="16x16">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script src="https://kit.fontawesome.com/0b6cc3dc83.js" crossorigin="anonymous"></script>
+</head>
+<script>
+	window.scroll({
+		behavior : 'smooth'
+	});
+	</script>
+<body>
+<div class="header" id = "header">
+	<div class="left-info">
+       <div class="logo">
+       	<img src = "img/loho.png">
+       </div>
+       <div class = "title">
+       	  <h1>Ronak Lala </h1>
+       </div>
+	</div>
+	<div class="center">
+		<ul>
+			<li><a href = "#main-content-1">Home</a>
+			</li>
+			<li><a href = "#content-2" >About</a>
+			</li>
+			<li><a href = "#services-2">Service</a>
+			</li>
+			<li><a href = "#portfolio">Portfolio</a>
+			</li>
+			<li><a href = "#contact" id = "change">Contact Us</a>
+			</li>
+		</ul>
+	</div>
+	<div class="right-svg">
+		<img src = "img/hamburger.svg" id = "toggle">
+		<script>
+var toggle  = document.getElementById("toggle");
+var content = document.getElementById("info");
+
+$(document).ready(function(){
+  $("#toggle").click(function(){
+    $("#info").fadeToggle("slow");
+});
+});
+		</script>
+		<div id="info"><br>
+			<ul>
+			<li><a href = "#main-content-1">Home</a>
+			</li>
+			<li><a href = "#content-2">About</a>
+			</li>
+			<li><a href = "#services-2">Service</a>
+			</li>
+			<li><a href = "#portfolio">Portfolio</a>
+			</li>
+			<li><a href = "#contact">Contact Us</a>
+			</li>
+		</ul>
+		</div>
+</div>
+</div><script>
+	window.onscroll = function() {myFunction()};
+
+
+var navbar = document.getElementById("header");
+
+
+var sticky = navbar.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<div class="container">
+<div class="main-content-1" id ="main-content-1">
+	<div class="left-content-1">
+		<h1><font class = "green_h1">CODE</font><font class = "white_h1"> WITH PROPER LOGIC<br>FOR BEST RESULT.</font></h1>
+		<h3>More people Together can achieve more things than a single person can.</h3><br>
+		<button class="btn-green-1">Get Started &nbsp;&nbsp;&nbsp; ▶</button>
+	</div>
+	<div class="right-img-1">
+		<img src = "img/loho.png">
+	</div>
+</div><br><br>
+<div class="top-btn">
+	<button class="btn" id = "btn-top">⬆</button> 
+	</div>
+	<script>
+		const btntotop = document.querySelector("#btn-top");
+		btntotop.addEventListener("click", function() {
+             window.scrollTo ({
+             	top:0,
+             	left:0,
+             	behavior:"smooth"
+             });
+		});
+	</script>
+<div class="content-2" id = "content-2">
+	<div class="divlist">
+		<ul>
+			<li>
+				<img src = "img/service1.svg" class="img-2"><br>
+				<h3>DESIGN PRINCIPLES</h3><br>
+                <h5>These are the basic things required for UI/UX designing and helps alot for Designing Principles.</h5>
+                		<a href = "about.html"><button class="btn-green-1">Know More About Us</button></a>
+			</li>
+			<li class="active-2">
+				<img src = "img/service2.svg" class="img-2"><br>
+				<h3>PRODUCT DESIGN</h3><br>
+                <h5>Product Designs are the major part of UI?UX designs and it also gives the feed about user experience.</h5>
+                		<button class="btn-green-1">Know More About Us</button>
+			</li>
+			<li>
+				<img src = "img/service3.svg" class="img-2"><br>
+				<h3>KEEP IT SIMPLE</h3><br>
+                <h5>The Design and the Interface should be easy and simple for the user to understand and interact according to it.</h5>
+                		<button class="btn-green-1">Know More About Us</button>
+			</li>
+		</ul>
+	</div>
+	</div><br>
+</div>
+<div class="progress-3" id = "services"><br><br>
+	<center><h2>SKILLS</h2></center>
+	<div class="page">
+            <ul>
+            	<li>
+            <div class="clearfix">
+
+                <div class="c100 p90 medium">
+                    <span>90%<br>HTML</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+        <li>
+            <div class="clearfix">
+
+                <div class="c100 p75 medium">
+                    <span>75%<br>CSS</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+        <li>
+            <div class="clearfix">
+
+                <div class="c100 p25 medium">
+                    <span>25%<br>JS</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+        <li>
+            <div class="clearfix">
+
+                <div class="c100 p61 medium">
+                    <span>61%<br>PHP</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+        <li>
+            <div class="clearfix">
+
+                <div class="c100 p70 medium">
+                    <span>70%<br>MYSQL</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+        </div>
+</div>
+<br>
+<div class="content-3" id = "services-2">
+
+    <div class="listdiv-3">
+    	<br><br>
+    	<center><h2>SERVICES</h2></center>
+    	<ul>
+    		<li>
+    			<h1>DESIGNING</h1>
+    			<h3>My Team can do UI/UX Designing and is quite experienced in Designing. It has made so many designs for Front-End Development.</h3>
+    			<h1 class="display-right">01</h1>
+    		</li>
+    		<li>
+    			<h1>DEVELOPMENT</h1>
+    			<h3>The Team can do Back-End work that is Development Work once the Fron-End is done after negotiating with the Consumer that requires the Product.</h3>
+    			<h1 class="display-right">02</h1>
+    		</li>
+    		<li>
+    			<h1>BRANDING</h1>
+    			<h3>The Branding work is easy for the Team as it only Requires the product information and details about that particular thing.</h3>
+    			<h1 class="display-right">03</h1>
+    		</li>
+    		<li>
+    			<h1>E-COMMERCE</h1>
+    			<h3>E-Commerce is a big deal as it requires so many things to be done simultaneously, But we can assure you that our team can handle the process related work of E-Commerce.</h3>
+    			<h1 class="display-right">04</h1>
+    		</li>
+    		<li>
+    			<h1>DESKTOP APPS</h1>
+    			<h3>The Desktop App development doesnt require much stuff and it also doesnt give any amount of pressure on the Designing and the Development team.</h3>
+    			<h1  class="display-right">05</h1>
+    		</li>
+    		<li>
+    			<h1>SUPPORT</h1>
+    			<h3>Our Team can be considered as the good support system any software have had before as we have so much experience of handling support systems.</h3>
+    			<h1 class="display-right">06</h1>
+    		</li>
+    	</ul>
+    </div>
+</div><br><br><br><br>
+<div class="content-4" id = "portfolio">
+	<br>
+	<center><h1>PORTFOLIO WORK</h1></center>
+	   <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<div class="card-h1" style="background-color: #CF3193;">
+      		<center><h1>Card - 1</h1></center>
+      		<img src = "img/01.jpg">
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="card-h1" style="background-color: #1E2FAA;">
+      		<center><h1>Card - 2</h1></center>
+      		<img src = "img/portfolio1.jpg">
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="card-h1" style="background-color: #AE462D;">
+      		<center><h1>Card - 3</h1></center>
+      		<img src = "img/portfolio2.jpg">
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="card-h1" style="background-color: #154BAF;">
+      		<center><h1>Card - 4</h1></center>
+      		<img src = "img/portfolio3.jpg">
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="card-h1" style="background-color: #271CB5;">
+      		<center><h1>Card - 5</h1></center>
+      		<img src = "img/portfolio4.jpg">
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="card-h1" style="background-color: #6F31C9;">
+      		<center><h1>Card - 6</h1></center>
+      		<img src = "img/portfolio5.jpg">
+      	</div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>	
+</div>
+<br>
+<br>
+<div class="content-5" id = "contact"><br>
+	<br><br>
+	<center><h1>CONTACT US WITH JUST A CLICK.</h1></center>
+	<div class="list-div-5">
+		<ul>
+			<li>
+				<a href = "tel: 7218896568"><i class="fa fa-mobile" aria-hidden="true"></i> - +91 7218896568</a>
+			</li>
+			<li>
+				<a href = "mailto:ronaklala2010@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> - ronaklala2010@gmail.com</a>
+			</li>
+			<li>
+				<a href = "https://www.google.com/maps/place/Dipti+Sky+City/@19.1902255,73.1706693,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7949b70bbe491:0xbf9dd50de8efeba8!8m2!3d19.1902204!4d73.172858"><i class="fa fa-map-marker" aria-hidden="true"></i> - Mumbai, India</a>
+			</li>
+			<li>
+				<a href = "https://steamcommunity.com/id/ronakgamer69/"><i class="fa fa-steam" aria-hidden="true"></i> - ronakgamer69</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<br><br><br>
+<div class="footer">
+	<div class="list-div">
+		<ul>
+			<a href="#main-content-1"><li>
+				HOME
+			</li></a>
+			<a href="#services"><li>
+				ABOUT
+			</li></a>
+			<a href="#services-2"><li>
+				SERVICE
+			</li></a>
+			<a href="#portfolio"><li>
+				PORTFOLIO
+			</li></a>
+			<a href="#contact"><li>
+				CONTACT US
+			</li></a>
+		</ul>
+	</div>
+	<br>
+	<div class="left-info">
+		COPYRIGHT © 2020 BY <font color = "#08d665">RONAK LALA</font><br>ALL RIGHT RESERVED
+	</div>
+	<div class="right-list">
+		<ul>
+			<li>
+				<a href = "https://www.facebook.com/profile.php?id=100009209934134"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href = "https://www.instagram.com/_.ronak_.lala._/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href = "https://api.whatsapp.com/send?phone=917218896568&text=Hello There!"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
